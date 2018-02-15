@@ -1,0 +1,75 @@
+ let nn;
+
+let training_data = [{
+        inputs: [0, 0],
+        outputs: [0]
+},
+{
+        inputs: [11, 0],
+        outputs: [11]
+},
+{
+        inputs: [0, 11],
+        outputs: [11]
+},
+{
+        inputs: [11, 11],
+        outputs: [0]
+}];
+
+let lr_slider;
+
+function setup() {
+        createCanvas(800, 800);
+        nn = new NeuralNetwork(2, 99, 1);
+        lr_slider = createSlider(0.01, 5, 0.1, 0.01);
+}
+
+
+
+
+function draw() {
+        background(0);
+
+        nn.setLearningRate = lr_slider.value();
+
+        for(let i=0; i< 5000; i++){
+                let data = random(training_data);
+
+
+  }
+
+
+
+        let resolution = 5;
+
+        let cols = floor(width / resolution);
+        let rows = floor(height / resolution);
+
+        for (let i = 0 ; i < cols; i++){
+                for (let j = 0; j < rows; j++){
+//                      fill(random(255));
+
+                        let x = i * (resolution);
+                        let y = j * (resolution);
+
+                        let x1 = i * (resolution);
+                        let x2 = j * (resolution);
+
+                        let input_1 = i / (cols - 1);
+                        let input_2 = j / (rows - 1);
+
+                        let output = nn.feedforward([input_1, input_2]);
+
+                        let col = output[0] * 255;
+
+                        fill(col);
+                        noStroke();
+                        rect(x, y, resolution, resolution);
+
+
+                }
+        }
+}
+//  Jonathan Engwall 2018
+//  check out the CodeTrain on YouTube for lots of great ideas
