@@ -1,0 +1,83 @@
+ #FenInDiv {
+	position: relative;
+	left: 60px;
+ }
+
+ #fenIn {
+	width: 480px;
+	left: 60px;
+ }
+
+#RunnerBottom {
+    position: relative;
+    top: 480px;
+    left: 50px;
+    width: 5000px;
+    height: 500px;
+ 
+    background-color:#dcdcdc;
+}
+
+#Board {
+    position: relative;
+    top: 20px;
+    left: 60px;
+    width: 480px;
+    height: 480px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#EngineOutput {
+    position: absolute;
+    left: 600px;
+    top: 250px;
+}
+
+.Square {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.Dark {
+    background-color:#000000;        /* CD143C  8B4500  68228B 8b6508 8b6914 292929 3d3d3d  7ffffd4 8a2be2 */  
+}
+
+.Light {
+    background-color:#caff70;        /*  228b22  dedede 7FFF00  dcdcdc  CAFF70 7fffd4   F8F8FF  FOFFFF 7fffd4 eoeeee */
+}
+
+.SqSelected {
+    background-color:#bf3eff;        /* 6495ed 9400D3     8B008B   BEBEBE   7FFFD4 */
+}
+
+.rank1 { top: 420px; padding-top: 5px; }
+.rank2 { top: 360px; padding-top: 5px; }
+.rank3 { top: 300px; padding-top: 5px; }
+.rank4 { top: 240px; padding-top: 5px; }
+.rank5 { top: 180px; padding-top: 5px; }
+.rank6 { top: 120px; padding-top: 5px; }
+.rank7 { top: 60px; padding-top: 5px; }
+.rank8 { top: 0px; padding-top: 5px; }
+
+.file1 { left: 0px; padding-left: 5px; }
+.file2 { left: 60px; padding-left: 5px;  }
+.file3 { left: 120px; padding-left: 5px; }
+.file4 { left: 180px; padding-left: 5px; }
+.file5 { left: 240px; padding-left: 5px; }
+.file6 { left: 300px; padding-left: 5px; }
+.file7 { left: 360px; padding-left: 5px; }
+.file8 { left: 420px; padding-left: 5px; }
+
+.Piece {
+    position: absolute;
+}
+
+
+
+
+
+
+
+
